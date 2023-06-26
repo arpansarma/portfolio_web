@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpan Sarma - Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    /* CSS Styles for Portfolio Website */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      text-align: center;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill-icon {
+      font-size: 36px;
+      color: #222;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .project-icon {
+      font-size: 48px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    #about {
+      background-color: #00b894;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+    #home {
+        background-image:url("pht.jpg");
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      animation: slide-in 1s;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #hime {
+        font-size:200px
+        ;
+         
+    }
+
+    #about .coder-boy {
+      font-size: 100px;
+      text-align: center;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 0.2;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.2;
+      }
+    }
+
+    #about p {
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #6c5ce7;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" style="background-color: #a29bfe;">
+      <h1 section id="hime">Arpan Sarma</h1>
+      <p>Passionate Machine Learning Engineer, Designer & Mentor. I create beautifully simple solutions and push the boundaries of what's possible with data.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="coder-boy">&#x1F9D1&#x200D;&#x1F4BB;</div>
+      <p>
+        Arpan Sarma is a student of B.Tech. Electrical Engineering at NIT Silchar, with expertise in Machine Learning, Deep Learning, Data Structures, and Algorithms. He has completed projects such as Sentiment Analysis and Thyroid Detection. Arpan is proficient in C++, Python, C, and MATLAB, and is a lifelong learner always looking for growth opportunities and eager to contribute to innovative projects that make a meaningful impact in the world of technology.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <span class="material-icons skill-icon">code</span>
+          <p>Python</p>
+        </div>
+        <div>
+          <span class="material-icons skill-icon">code</span>
+          <p>C++</p>
+        </div>
+        <div>
+          <span class="material-icons skill-icon">code</span>
+          <p>C</p>
+        </div>
+        <div>
+          <span class="material-icons skill-icon">code</span>
+          <p>Matlab</p>
+        </div>
+        <div>
+          <span class="material-icons skill-icon">laptop_mac</span>
+          <p>Machine Learning</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <span class="material-icons project-icon">mark_email_read</span>
+          <h3>Spam Classification</h3>
+          <p>Developed a machine learning model for spam classification, utilizing natural language processing techniques to identify and filter spam messages.</p>
+        </div>
+        <div class="project-card">
+          <span class="material-icons project-icon">biotech</span>
+          <h3>Thyroid Detection</h3>
+          <p>Implemented a machine learning model to detect thyroid abnormalities based on medical data analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        You can reach me at:<br>
+        Email: arpansarma.009@gmail.com<br>
+        Phone: 6026675115
+      </p>
+      <a class="button" href="mailto:arpansarma.009@gmail.com">Get In Touch</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://github.com/arpansarma" >GitHub</span></a>
+      <a href="https://www.facebook.com/profile.php?id=100068137661476&mibextid=ZbWKwL">Facebook</span></a>
+      <a href="https://www.linkedin.com/in/arpansarma">LinkedIn</span></a>
+      <a href="https://instagram.com/arpansarma____?igshid=MzNlNGNkZWQ4Mg==">Instagram</span></a>
+    </div>
+  </footer>
+
+  <script>
+    // Add any JavaScript code you may need
+  </script>
+</body>
+</html>
